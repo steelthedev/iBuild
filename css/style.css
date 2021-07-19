@@ -51,13 +51,13 @@ body{
     transform: scale(1.1);
 }
 
-.about, .services , .packages , .team , .footer-body , .contact , .login{
+.about, .services , .packages , .team , .footer-body , .contact , .login , .services , .signup{
     padding: 60px 0;
 
 }
 
-.about h2, .services h2, .packages h2 , .team h2 , .contact h2 , .login h1{
-    color: var(--main-color);
+.about h2, .services h2, .packages h2 , .team h2 , .contact h2 , .login h1 , .services h2 , .signup h1{
+    color: var(--main-color); 
     font-size:1.9rem;
 }
 
@@ -80,7 +80,7 @@ body{
     margin-bottom:10px;
 }
 
-.packages .package-single{
+.packages .package-single , .services .package-single{
 
     color: var(--color-dark);
     background: #fff;
@@ -88,12 +88,12 @@ body{
     padding: 30px;
 }
 
-.packages .package-single .package-price span{
+.packages .package-single .package-price span , .services .package-single .package-price span{
     font-size: 3rem;
     color: var(--main-color);
 }
 
-.packages .package-single ul li{
+.packages .package-single ul li , .services .package-single ul li { 
     color: var(--color-dark);
     font-size: 1.1rem;
 }
@@ -185,8 +185,24 @@ footer a{
     margin-top: 95px;
 }
 
-.login .btn{
+.login .btn , .signup .btn{
     padding: 20px;
     color: #ffffff;
     background: var(--main-color);
+}
+
+.services .btn{
+    padding: 25px;
+    color: #ffffff;
+    background: var(--main-color);
+}
+
+.services .s-btn{
+    padding: 20px;
+    
+}
+
+.services p{
+    color: var(--color-dark);
+    font-size: 1rem;
 }
